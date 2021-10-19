@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "itme"
 version = "0.1.0"
-description = "Interlinter Text Methods for Exploration"
+description = "Interlinear Text Methods for Exploration"
 authors = ["Will Fitzgerald <willf@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
