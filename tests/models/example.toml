@@ -1,0 +1,42 @@
+title = "ITME configuration file example"
+[reference_field]
+[reference_field.ref]
+    name = 'ref'
+    refers_to = ["book", "chapter"]
+
+[reference_field.id]
+   name = "id"
+[text_field]
+[text_field.source]
+   to = "tx"
+   lexeme = '\p{Alpha}+|\p{Punctuation}'
+   word = '\p{Alpha}+'
+   punctuation = '\p{Punctuation}'
+   sentence = '(?:[^;\.]+[;\.]\s*)'
+   paragraph = '\n\n'
+   paragraph_type = 'split'
+   
+[text_field.target]
+[aligning_field_defaults]
+    from = "tx"
+[aligning_field]
+[aligning_field.tx]
+[aligning_field.gt]
+mapping_name = "grammatical_tag"
+[aligning_field.lm]
+mapping_name = "lemma"
+
+[aligning_field.wg]
+mapping_name = "word_gloss"
+[aligning_field.lr]
+mapping_name = "lexical_root"
+[freeform_field]
+[freeform_field.ft]
+from = "tx"
+mapping_name = "free_translation"
+[freeform_field.lt]
+from = "tx"
+mapping_name = "literal_translation"
+[freeform_field.gn]
+from = "tx"
+mapping_name = "grammar_note"
