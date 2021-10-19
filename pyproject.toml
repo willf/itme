@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "itme"
+version = "0.1.0"
+description = "Interlinter Text Methods for Exploration"
+authors = ["Will Fitzgerald <willf@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tomli = "^1.2.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
